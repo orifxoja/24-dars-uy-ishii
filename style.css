@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.div {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: wheat;
+  margin: 0 auto;
+}
+
+.div1 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  animation-name: div;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes div {
+  0% {
+    left: 0px;
+    background-color: rgb(62, 62, 146);
+  }
+  25% {
+    left: 300px;
+    top: 0px;
+    background-color: rgb(207, 154, 154);
+  }
+  50% {
+    top: 300px;
+    right: 0px;
+    background-color: black;
+  }
+  75% {
+    right: 300px;
+    bottom: 0px;
+    background-color: yellow;
+  }
+  100% {
+    bottom: 300px;
+    background-color: red;
+  }
+}
